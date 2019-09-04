@@ -3,14 +3,19 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Product App</title>
+<link rel="stylesheet" type="text/css" href="product_style.css">
 </head>
 <body>
+    <!--Added in Lesson 2-->
+    <div class="nav-bar"></div>
 
     <div id="app">
-        <h1>{{ product }}</h1>
-        <!--Challenge
-            <p>{{ description }}</p>
-        -->
+        <!--Added in Lesson 2 (lines 13-18), moved to component in Lesson 8-->
+        <!--Added in Lesson 8-->
+        <product :premium="premium"></product>
+        
+        </div>
+        
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="main.js"></script>
