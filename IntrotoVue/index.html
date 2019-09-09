@@ -12,7 +12,12 @@
     <div id="app">
         <!--Added in Lesson 2 (lines 13-18), moved to component in Lesson 8-->
         <!--Added in Lesson 8-->
-        <product :premium="premium"></product>
+
+        <div class="cart">
+            <p>Cart({{ cart.length }})</p>
+        </div>
+
+        <product :premium="premium" @add-to-cart="updateCart"></product> <!--Challenge 9: @out-of-cart="removeItem"-->
         
         </div>
         
